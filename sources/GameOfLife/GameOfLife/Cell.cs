@@ -12,6 +12,8 @@ namespace GameOfLife
 
         public bool IsAlive { get; set; }
 
+        public Ellipse Visual { get; set; }
+
 
         public Cell(int row, int column, int age, bool alive)
         {
@@ -19,7 +21,6 @@ namespace GameOfLife
             PositionY = column * 5;
             Age = age;
             IsAlive = alive;
-            
         }
     }
 }
